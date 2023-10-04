@@ -18,6 +18,7 @@ int	ft_isascii(int c)
 		return (1);
 	return (0);
 }
+
 /*
 #include "libft.h"
 #include <stdio.h>
@@ -40,4 +41,14 @@ int main()
 
     return 0;
 }
+*/
+
+/*
+** Función: ft_isascii
+** ---------------------
+** Verifica si el carácter pasado es un carácter ASCII.
+**
+** c: el carácter a verificar.
+**
+** Devuelve: 1 si el carácter es un carácter ASCII, 0 en caso contrario.
 */
