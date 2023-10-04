@@ -6,7 +6,7 @@
 /*   By: isllobre <isllobre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/03 13:51:00 by isllobre          #+#    #+#             */
-/*   Updated: 2023/10/03 13:53:40 by isllobre         ###   ########.fr       */
+/*   Updated: 2023/10/04 15:29:15 by isllobre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ int	ft_isprint(int c)
 		return (1);
 	return (0);
 }
+
 /*
 #include "libft.h"
 #include <stdio.h>
@@ -40,4 +41,15 @@ int main()
 
     return 0;
 }
+*/
+
+/*
+** Función: ft_isprint
+** ---------------------
+** Verifica si el carácter pasado es un carácter imprimible.
+**
+** c: el carácter a verificar.
+**
+** Devuelve: 1 si el carácter es un carácter imprimible, 
+y 0 en caso contrario.
 */
