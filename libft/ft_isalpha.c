@@ -42,5 +42,13 @@ int main()
     return 0;
 }
 */
-//returns zero if the character tests false and 
-//returns non-zero if the character tests true.
+
+/*
+** Función: ft_isalpha
+** ---------------------
+** Verifica si el carácter pasado es un carácter alfabético.
+**
+** c: el carácter a verificar.
+**
+** Devuelve: 1 si el carácter es un carácter alfabético, 0 en caso contrario.
+*/
