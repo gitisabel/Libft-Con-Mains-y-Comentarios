@@ -6,7 +6,7 @@
 /*   By: isllobre <isllobre@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/03 12:01:51 by isllobre          #+#    #+#             */
-/*   Updated: 2023/10/03 13:04:38 by isllobre         ###   ########.fr       */
+/*   Updated: 2023/10/04 15:26:03 by isllobre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ int	ft_isdigit(int c)
 		return (1);
 	return (0);
 }
+
 /*
 #include "libft.h"
 #include <stdio.h>
@@ -40,4 +41,15 @@ int main()
 
     return 0;
 }
+*/
+
+/*
+** Función: ft_isdigit
+** ---------------------
+** Verifica si el carácter pasado es un dígito numérico.
+**
+** c: el carácter a verificar.
+**
+** Devuelve: 1 si el carácter es un dígito numérico, 
+y 0 en caso contrario.
 */
