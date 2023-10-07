@@ -1,9 +1,13 @@
+# El nombre del archivo de la biblioteca que se va a crear
 NAME = libft.a
 
+# El compilador que se va a usar
 CC = gcc
 
+# Las opciones del compilador
 CFLAGS = -Wall -Wextra -Werror
 
+# Los archivos fuente que se van a compilar
 SOURCE =	ft_isalpha.c \
 			ft_isdigit.c \
 			ft_isalnum.c \
@@ -48,22 +52,30 @@ SOURCE =	ft_isalpha.c \
 			ft_lstiter_bonus.c \
 			ft_lstmap_bonus.c
 
-OBJECTS = $(SOURCE:.c=.o) 
+# Los archivos objeto que se van a generar a partir de los archivos fuente
+OBJECTS = $(SOURCE:.c=.o) // Convierte cada archivo .c en un archivo .o
 
+# Regla para crear la biblioteca
 $(NAME): $(OBJECTS)
-	@ar crs $(NAME) $(OBJECTS)
+	@ar crs $(NAME) $(OBJECTS) // Crea la biblioteca
 
+# Regla para compilar todo
 all: $(NAME)
 
+# Regla para compilar cada archivo .c en un archivo .o
 %.o: %.c
-	@$(CC) $(CFLAGS) -c -o $@ $<
+	@$(CC) $(CFLAGS) -c -o $@ $< // Compila el archivo .c en un archivo .o
 	
+# Regla para limpiar los archivos objeto
 clean:
 	@$(RM) $(OBJECTS) 
 
+# Regla para limpiar todo, incluyendo la biblioteca
 fclean: clean
 	rm -f $(NAME)
 
+# Regla para recompilar todo
 re: fclean all
 
+# Reglas que no corresponden a archivos
 .PHONY: all clean fclean re
