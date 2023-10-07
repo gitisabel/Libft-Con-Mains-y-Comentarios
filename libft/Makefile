@@ -53,11 +53,11 @@ SOURCE =	ft_isalpha.c \
 			ft_lstmap_bonus.c
 
 # Los archivos objeto que se van a generar a partir de los archivos fuente
-OBJECTS = $(SOURCE:.c=.o) // Convierte cada archivo .c en un archivo .o
+OBJECTS = $(SOURCE:.c=.o)
 
 # Regla para crear la biblioteca
 $(NAME): $(OBJECTS)
-	@ar crs $(NAME) $(OBJECTS) // Crea la biblioteca
+	@ar crs $(NAME) $(OBJECTS)
 
 # Regla para compilar todo
 all: $(NAME)
